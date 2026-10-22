@@ -13,6 +13,9 @@ Sections:
 	.sdata2     type:rodata align:16
 	.sbss2      type:bss align:4
 
+Runtime.PPCEABI.H/__mem.c:
+	.init       start:0x8000540C end:0x80005544
+
 Game/BlastBreak.cpp:
 	.text       start:0x800EC944 end:0x800ED440
 	.rodata     start:0x804B91E8 end:0x804B92E8
@@ -2167,6 +2170,3 @@ Runtime.PPCEABI.H/__init_cpp_exceptions.cpp:
 	.dtors      start:0x804AA080 end:0x804AA084 rename:.dtors$10
 	.dtors      start:0x804AA084 end:0x804AA088 rename:.dtors$15
 	.sdata      start:0x805EDCA0 end:0x805EDCA8
-
-Runtime.PPCEABI.H/__mem.c:
-	.init       start:0x8000540C end:0x80005544
